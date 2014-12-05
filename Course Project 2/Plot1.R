@@ -10,7 +10,7 @@ dataSample = tapply(data$Emissions, data$year, sum)
 
 # create barplot
 png(filename='plot1.png', width=480, height = 480)
-barplot(totals, 
+barplot(dataSample, 
         main = 'Total Emissions by Year', 
         ylab = 'PM Emitted (tons)',
         xlab = 'Year',
